@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог авто с пробегом – FRAGO USA LLC</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="cars">
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">
+            <span class="logo-main">FRAGO USA</span>
+            <span class="logo-sub">Auto INEX</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="cars.html" class="active">Авто с пробегом</a>
+            <a href="index.html#services">Услуги</a>
+            <a href="index.html#contacts">Контакты</a>
+        </nav>
+    </div>
+</header>
 
+<main class="section">
+    <div class="container">
+        <h1>Автомобили с пробегом в наличии</h1>
+        <p class="muted">
+            Все автомобили с прозрачной историей, детальной себестоимостью и возможностью
+            оформления под клиента или под перепродажу.
+        </p>
+
+        <div class="filters">
+            <div>
+                <label>Марка</label>
+                <select id="filter-make">
+                    <option value="">Все</option>
+                </select>
+            </div>
+            <div>
+                <label>Макс. цена (USD)</label>
+                <input type="number" id="filter-price" min="0" placeholder="например, 45000" />
+            </div>
+            <div>
+                <label>Минимальный год</label>
+                <input type="number" id="filter-year" min="2005" max="2030" placeholder="2018" />
+            </div>
+            <div>
+                <label>Статус</label>
+                <select id="filter-status">
+                    <option value="">Любой</option>
+                    <option value="В наличии">В наличии</option>
+                    <option value="Ожидается">Ожидается</option>
+                    <option value="Продано">Продано</option>
+                </select>
+            </div>
+            <button id="filter-reset" class="btn small">Сбросить</button>
+        </div>
+
+        <div id="cars-grid" class="grid-3 cards-grid">
+            <!-- сюда JS вставит карточки -->
+        </div>
+        <p id="cars-empty" class="muted" style="display:none;">
+            По заданным параметрам автомобили не найдены. Попробуйте изменить фильтры.
+        </p>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>© FRAGO USA LLC · Auto INEX</span>
+        <span>fragousa.com</span>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
