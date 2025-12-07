@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Tesla Model X Plaid 2023",
+    "vin": "7SAXCBE60PF401707",
+    "price": 53560.94,
+    "status": "Ожидает номерные знаки",
+    "location": "Тбилиси",
+    "image": "img/tesla_x_plaid.jpg",
+    "description": "Себестоимость: $53,560.94. Требуется снять или восстановить плёнку."
+  }
+]
