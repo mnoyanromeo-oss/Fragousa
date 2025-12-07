@@ -1,30 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FRAGO USA LLC – Auto INEX</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: black;
-            color: white;
-            text-align: center;
-            padding-top: 120px;
-        }
-        h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 22px;
-            opacity: 0.8;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-    <h1>FRAGO USA LLC – Auto INEX</h1>
-    <p>Официальный сайт. Разработка в процессе…</p>
+<body data-page="home">
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">
+            <span class="logo-main">FRAGO USA</span>
+            <span class="logo-sub">Auto INEX</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="cars.html">Авто с пробегом</a>
+            <a href="#services">Услуги</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h1>Авто из США и Европы под ключ</h1>
+                <p>
+                    FRAGO USA LLC – покупка, доставка и продажа автомобилей с аукционов
+                    Copart, IAAI и других площадок. Прозрачная себестоимость, юридически
+                    чистое оформление и сервисное сопровождение.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="cars.html">Каталог авто с пробегом</a>
+                    <a class="btn" href="#contacts">Оставить запрос</a>
+                </div>
+            </div>
+            <div class="hero-badge">
+                <span>USA · EU · Korea</span>
+                <span>Import &amp; Export</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Что мы делаем</h2>
+            <div class="grid-3">
+                <article class="card">
+                    <h3>Подбор и выкуп авто</h3>
+                    <p>
+                        Подбор автомобилей под бюджет клиента, проверка по VIN,
+                        участие в торгах на аукционах, полный расчёт себестоимости.
+                    </p>
+                </article>
+                <article class="card">
+                    <h3>Логистика и растаможка</h3>
+                    <p>
+                        Организация доставки по схеме порт–порт–склад, страхование груза,
+                        оформление в порту Поти, помощь с растаможкой и регистрацией.
+                    </p>
+                </article>
+                <article class="card">
+                    <h3>Продажа готовых авто</h3>
+                    <p>
+                        Автомобили в наличии на складе в Грузии: проверенный пробег,
+                        понятная история, сервисное обслуживание и поддержка после покупки.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-dark">
+        <div class="container">
+            <h2>Почему клиенты выбирают нас</h2>
+            <div class="grid-3">
+                <article class="card flat">
+                    <h3>Прозрачная математика</h3>
+                    <p>Каждый автомобиль имеет детальный расчёт: инвойс, доставка, ремонт, %.</p>
+                </article>
+                <article class="card flat">
+                    <h3>Техническая экспертиза</h3>
+                    <p>Собственная СТО, диагностика Launch/Tesla Toolbox, качественный ремонт.</p>
+                </article>
+                <article class="card flat">
+                    <h3>Работаем международно</h3>
+                    <p>Поставки для Грузии, Армении, РФ и других стран. Гибкие условия для инвесторов.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="section">
+        <div class="container contacts">
+            <div>
+                <h2>Контакты</h2>
+                <p><strong>FRAGO USA LLC – Auto INEX</strong></p>
+                <p>E-mail: <a href="mailto:mnoyanromeo@gmail.com">mnoyanromeo@gmail.com</a></p>
+                <p>Сайт: <a href="https://fragousa.com">fragousa.com</a></p>
+                <p>Основные локации: Грузия · США</p>
+            </div>
+            <div class="contacts-note">
+                <p>
+                    Оставьте запрос на подбор автомобиля, и мы подготовим для вас
+                    несколько вариантов с расчётом полной себестоимости и прогнозом продажи.
+                </p>
+                <a class="btn primary" href="cars.html">Перейти к каталогу</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>© FRAGO USA LLC · Auto INEX</span>
+        <span>Import &amp; Export · Used Cars · Service</span>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
