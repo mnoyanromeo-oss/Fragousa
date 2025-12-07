@@ -1,1 +1,403 @@
+/* css/style.css */
 
+/* Базовые стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #050608;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Шапка */
+
+.header {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: rgba(5,6,8,0.9);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+
+.logo span {
+  color: #ffcc33;
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+}
+
+.nav a {
+  opacity: 0.8;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+/* Контейнер */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+/* Главный экран */
+
+.hero {
+  padding: 48px 0 32px;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.8fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.15);
+  opacity: 0.9;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg,#ffcc33,#ff9100);
+  color: #000;
+  font-weight: 600;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #f5f5f5;
+}
+
+.btn-outline:hover {
+  border-color: #ffcc33;
+}
+
+.hero-meta {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 16px;
+}
+
+/* Блоки */
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #101218;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.card-meta {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+/* Каталог */
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.select,
+.input {
+  background: #050608;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #f5f5f5;
+}
+
+.select:focus,
+.input:focus {
+  outline: 1px solid #ffcc33;
+}
+
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.car-card {
+  background: #101218;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.car-img {
+  background: radial-gradient(circle at top, #444, #000);
+  height: 160px;
+}
+
+.car-img-inner {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.car-body {
+  padding: 14px 14px 12px;
+}
+
+.car-title {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.car-badge {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.car-specs {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.car-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.car-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffcc33;
+}
+
+.car-location {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.car-footer {
+  padding: 0 14px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-small {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Страница авто */
+
+.car-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.4fr);
+  gap: 24px;
+}
+
+.car-hero {
+  background: #101218;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 16px;
+}
+
+.car-hero-main {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+}
+
+.car-hero-meta {
+  padding: 12px 14px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.car-panel {
+  background: #101218;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 16px 18px;
+}
+
+.car-panel h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.car-panel .price-big {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffcc33;
+  margin-bottom: 4px;
+}
+
+.car-panel .price-note {
+  font-size: 12px;
+  opacity: 0.75;
+  margin-bottom: 16px;
+}
+
+.list {
+  list-style: none;
+  font-size: 14px;
+}
+
+.list li {
+  padding: 4px 0;
+  opacity: 0.9;
+}
+
+/* Контакты */
+
+.contacts {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.contacts a {
+  color: #ffcc33;
+}
+
+/* Подвал */
+
+.footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 16px 20px 24px;
+  font-size: 12px;
+  opacity: 0.7;
+  text-align: center;
+}
+
+/* Мобильная адаптация */
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .car-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+}
